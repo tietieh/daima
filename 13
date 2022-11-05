@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+    int a,b;
+    srand((unsigned)time(NULL));
+    a=rand()%51+50;
+    b=rand()%51+50;
+    printf ("%d,%d",a,b);
+    if(a>=b)printf("\n大的数是%d",a);
+    else printf("\n大的数是%d",b);
+}
