@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    double a;
+    printf("请输入金额："); 
+    scanf("%lf",&a);
+    if (a<500) printf("实际付款金额为：%lf",a);
+    else if (a>=500&&a<1000) printf("实际付款金额为：%lf",(a*0.95));
+    else if (a>=1000&&a<2000) printf("实际付款金额为：%lf",(a*0.9));
+    else if (a>=2000&&a<3000) printf("实际付款金额为：%lf",(a*0.85));
+    else if (a>=3000) printf("实际付款金额为：%lf",(a*0.8));
+}
