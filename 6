@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+	int a,b,c,d,r;
+	srand((unsigned)time(NULL));
+	printf("两位数四则运算测试\n");
+	a=rand()%89+11;
+	b=rand()%89+11;
+	scanf("%d",&c);
+	(c==1)?(printf("%d+%d=",a,b),d=a+b):1;
+	(c==2)?(printf("%d-%d=",a,b),d=a-b):1;
+	(c==3)?(printf("%d*%d=",a,b),d=a*b):1;
+	(c==4)?(printf("%d/%d=",a,b),d=a/b):1;
+	scanf("%d",&r);
+	printf(d==r?"yes":"no");
+}
